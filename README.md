@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Notifications Page Solution]!(./design/desktop-preview.jpg)
+[Notifications Page Solution]!(./design/desktop-preview.jpg)
 
 ### Links
 
