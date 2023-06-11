@@ -35,7 +35,6 @@ function count() {
       actives++;
     } else {
       item.style.backgroundColor = "white";
-      const after = item.querySelector(".after");
       after.style.display = "none";
     }
   });
