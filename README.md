@@ -81,7 +81,6 @@ These resources were instrumental in my learning process and I highly recommend 
 
 ## Author
 
-- Website - [Haitam Elgharras](https://www.your-site.com)
 - GitHub - [Haitam-Elgharras](https://github.com/Haitam-Elgharras)
 - Frontend Mentor - [@Haitam-Elgharras](https://www.frontendmentor.io/profile/Haitam-Elgharras)
 
