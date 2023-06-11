@@ -33,6 +33,10 @@ function count() {
     const after = item.querySelector(".after");
     if (after.classList.contains("active")) {
       actives++;
+    } else {
+      item.style.backgroundColor = "white";
+      const after = item.querySelector(".after");
+      after.style.display = "none";
     }
   });
   counter.innerHTML = actives;
