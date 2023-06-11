@@ -14,7 +14,6 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
   - [Continued Development](#continued-development)
   - [Useful Resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -29,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Notifications Page Solution](./screenshot.jpg)
+![Notifications Page Solution]!(./design/desktop-preview.jpg)
 
 ### Links
 
