@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(247, 250, 253)">
+    <div
+      class="container mx-auto mt-10 px-5 py-4 rounded-md"
+      style="max-width: 620px; background-color: white"
+    >
+      <div class="top flex justify-between items-center mb-8">
+        <h1 class="font-bold" style="font-size: 20px">
+          Notifications <span class="counter">7</span>
+        </h1>
+        <span class="mark-read text-sm">Mark all as read</span>
+      </div>
+
+      <div
+        class="item flex items-center p-4 rounded-md mb-4"
+        style="font-size: 14px"
+      >
+        <div style="width: 40px" class="me-4 h-100">
+          <img
+            src="assets/images/avatar-mark-webber.webp"
+            alt=""
+            style="width: 40px"
+            class="max-w-none"
+          />
+        </div>
+        <div class="text flex flex-wrap items-center">
+          <div class="line inline w-full">
+            <span class="user m-0 me-1 font-bold">Mark Webber</span>
+            reacted to your recent post
+            <span class="activity-notify pe-2 ms-1"
+              >My first tournament today!</span
+            >
+            <span class="after active"></span>
+          </div>
+          <span class="time-notify block w-full m-0" style="">1m ago</span>
+        </div>
+      </div>
+      <div
+        class="item flex items-center p-4 rounded-md mb-4"
+        style="font-size: 14px"
+      >
+        <div style="width: 40px" class="me-4 h-100">
+          <img
+            src="assets/images/avatar-angela-gray.webp"
+            alt=""
+            style="width: 40px"
+            class="max-w-none"
+          />
+        </div>
+        <div class="text flex flex-wrap items-center">
+          <div class="line inline w-full">
+            <span class="user m-0 me-1 font-bold">Angela Gray</span>
+            <span class="text-notify m-0 me-1">followed you</span>
+            <span class="after active"></span>
+          </div>
+          <span class="time-notify block w-full m-0" style="">5m ago</span>
+        </div>
+      </div>
+      <div
+        class="item flex items-center p-4 rounded-md mb-4"
+        style="font-size: 14px"
+      >
+        <div style="width: 40px" class="me-4 h-100">
+          <img
+            src="assets/images/avatar-jacob-thompson.webp"
+            alt=""
+            style="width: 40px"
+            class="max-w-none"
+          />
+        </div>
+        <div class="text flex flex-wrap items-center">
+          <div class="line inline w-full">
+            <span class="user m-0 me-1 font-bold">Jacob Thompson</span>
+            <span class="text-notify m-0 me-1">has joined your group</span>
+            <span class="activity-notify-group pe-2">Chess Club</span>
+            <span class="after active"></span>
+          </div>
+          <span class="time-notify block w-full m-0" style="">1m ago</span>
+        </div>
+      </div>
+      <div class="item flex p-4 rounded-md mb-4" style="font-size: 14px">
+        <div style="width: 40px" class="me-4">
+          <img
+            src="assets/images/avatar-rizky-hasanuddin.webp"
+            alt=""
+            style="width: 40px"
+            class="max-w-none"
+          />
+        </div>
+        <div class="text flex flex-wrap items-center">
+          <div class="line inline w-full">
+            <span class="user m-0 me-1 font-bold">Rizky Hasanuddin</span>
+            <span class="text-notify m-0 me-1">sent you private message</span>
+            <span class="after active"></span>
+          </div>
+          <span class="time-notify block w-full m-0 mb-1">5 days ago</span>
+          <div class="text-notify-custom p-3 rounded-md">
+            Hello, thanks for setting up the Chess Club. live been a member for
+            a few weeks now and l'm already having lots of fun and improving my
+            game.
+          </div>
+        </div>
+      </div>
+      <div
+        class="item flex items-center p-4 rounded-md mb-4"
+        style="font-size: 14px"
+      >
+        <div style="width: 40px" class="me-4 h-100">
+          <img
+            src="assets/images/avatar-kimberly-smith.webp"
+            alt=""
+            style="width: 40px"
+            class="max-w-none"
+          />
+        </div>
+        <div class="text flex flex-wrap items-center">
+          <div class="line inline w-full">
+            <span class="user m-0 me-1 font-bold">Kimberly Smith</span>
+            <span class="text-notify m-0 me-1">commented on your picture</span>
+            <span class="after active"></span>
+          </div>
+          <span class="time-notify block w-full m-0" style="">1 week ago</span>
+        </div>
+        <div class="flex grow justify-end">
+          <img
+            src="assets/images/image-chess.webp"
+            style="width: 40px"
+            class="max-w-none"
+          />
+        </div>
+      </div>
+      <div
+        class="item flex items-center p-4 rounded-md mb-4"
+        style="font-size: 14px"
+      >
+        <div style="width: 40px" class="me-4 h-100">
+          <img
+            src="assets/images/avatar-nathan-peterson.webp"
+            alt=""
+            style="width: 40px"
+            class="max-w-none"
+          />
+        </div>
+        <div class="text flex flex-wrap items-center">
+          <div class="line inline w-full">
+            <span>
+              <span class="user m-0 me-1 font-bold">Nathan Peterson </span>
+              reacted to your recent post
+              <span class="activity-notify pe-2"
+                >5 end-game strategies to increase your win rate</span
+              >
+              <span
+                class="after active"
+                style="transform: translate(0); display: inline inline-block"
+              ></span>
+            </span>
+          </div>
+          <span class="time-notify block w-full m-0">2 weeks ago</span>
+        </div>
+      </div>
+      <div
+        class="item flex items-center p-4 rounded-md mb-4"
+        style="font-size: 14px"
+      >
+        <div style="width: 40px" class="me-4 h-100">
+          <img
+            src="assets/images/avatar-anna-kim.webp"
+            alt=""
+            style="width: 40px"
+            class="max-w-none"
+          />
+        </div>
+        <div class="text flex flex-wrap items-center">
+          <div class="line inline w-full">
+            <span class="user m-0 me-1 font-bold">Anna Kim</span>
+            left the group
+            <span class="activity-notify-group pe-2 ms-1">Chess Club</span>
+            <span class="after active"></span>
+          </div>
+          <span class="time-notify block w-full m-0">2 weeks ago</span>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

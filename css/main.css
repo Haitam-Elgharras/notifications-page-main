@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --white: hsl(0, 0%, 100%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue-1: hsl(211, 68%, 94%);
+  --light-grayish-blue-2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+  --font-weight-500: 500;
+  --font-weight-800: 800;
+}
+.container .item {
+  position: relative;
+  cursor: pointer;
+  background-color: var(--very-light-grayish-blue);
+}
+.item div.line {
+  color: var(--dark-grayish-blue);
+}
+.container .user {
+  color: black;
+}
+.container .activity-notify {
+  font-weight: 600;
+  color: var(--dark-grayish-blue);
+}
+
+.container span {
+  color: var(--dark-grayish-blue);
+  display: inline;
+}
+.mark-read {
+  color: var(--dark-grayish-blue);
+  cursor: pointer;
+}
+.container .mark-read:hover,
+.activity-notify:hover {
+  color: var(--blue);
+}
+.item .time-notify {
+  color: var(--grayish-blue);
+}
+
+.item .after {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--red);
+  border-radius: 50%;
+}
+.item .activity-notify-group {
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.item .text-notify-custom {
+  color: var(--dark-grayish-blue);
+  border: 1px solid var(--light-grayish-blue-1);
+}
+.item .text-notify-custom:hover {
+  border: 1px solid transparent;
+  background-color: var(--light-grayish-blue-2);
+}
+span.counter {
+  background-color: var(--blue);
+  color: hsl(194, 47%, 87%);
+  padding: 1px 6px;
+  border-radius: 8px;
+}
